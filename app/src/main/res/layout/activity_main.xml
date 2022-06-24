@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:scrollbars="vertical"
+    android:id="@+id/drawerActivity"
+    android:background="#880202">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/footballRv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/football_tv"
+            android:fontFamily="@font/ptsansbold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Football"
+            android:textColor="#FFC107"
+            app:layout_constraintTop_toBottomOf="@id/footballRv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="10dp"
+            android:textSize="30sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cricketRv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/football_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/cricket_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ptsansbold"
+            android:text="Cricket"
+            android:textColor="#FFC107"
+            app:layout_constraintTop_toBottomOf="@id/cricketRv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="10dp"
+            android:textSize="30sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/hockeyRv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cricket_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/hockey_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ptsansbold"
+            android:text="Hockey"
+            android:textColor="#FFC107"
+            app:layout_constraintTop_toBottomOf="@id/hockeyRv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="10dp"
+            android:textSize="30sp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/iceSkatingRv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/hockey_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/iceSkating_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ptsansbold"
+            android:text="NBA"
+            android:textColor="#FFC107"
+            app:layout_constraintTop_toBottomOf="@id/iceSkatingRv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="10dp"
+            android:textSize="30sp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nv_view"
+        android:background="#E6B82D"
+        app:headerLayout="@layout/nav_header"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/bottom_nav_menu"/>
+</androidx.drawerlayout.widget.DrawerLayout>

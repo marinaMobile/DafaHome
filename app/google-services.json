@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "807834701582",
+    "project_id": "dafahome-3741e",
+    "storage_bucket": "dafahome-3741e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807834701582:android:44c799dd0ba3716ca6d15f",
+        "android_client_info": {
+          "package_name": "com.sportdafa.dafahome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "807834701582-lvaj48na6m0vvpaa8hftklukkh6rk1iu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTpf-YZ4rs0WhSAxwZHBKHXAmAoSTsouk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "807834701582-lvaj48na6m0vvpaa8hftklukkh6rk1iu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
